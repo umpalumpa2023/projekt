@@ -2,11 +2,11 @@
 
 import tkinter as tk
 from gui.jump_height_app import JumpHeightApp
-from recognition.yolo_recognition import YOLORecognition
+from recognition.yolo_recognition import Recognition
 
 def main():
     root = tk.Tk()
-    recognition_software = YOLORecognition()
+    recognition_software = Recognition()
     app = JumpHeightApp(root, recognition_software)
     root.mainloop()
 
